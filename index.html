@@ -11,50 +11,55 @@
     <title>Flight Search Engine</title>
 </head>
 <body>
-    <h1>Flight Search Engine</h1>
+    <div class="header">
+        <h1>Flight <span>Search Engine</span> </h1>
+    </div>
+    
     <div class="left">
-            <div class="details">
-                <form action="" method="GET" class=one-way>
+            
+                <form action="" method="GET" class="form-details">
                     <div class="type">
-                        <label for="type">One way or Return</label>
-                        <input type="radio" name="type" id="oneway" value="one_way">
-                        <input type="radio" name="type" id="return" value="return">
+                        
+                        <input type="radio" name="radio-one" id="radio-one" value="one" checked>
+                        <label for="radio-one">One Way</label>
+                        
+                        <input type="radio" name="radio-two" id="radio-two" value="return">
+                        <label for="radio-two">Return</label>
                    </div>
                     
+                <div class="details">
                    <div class="origin">
-                        <label for="origin">Enter Origin City</label>
-                        <input type="text" name="origin" id="origin" required>
+                        <input type="text" name="origin" placeholder="Enter Origin City" id="origin" required>
                    </div> 
 
                    <div class="destin">
-                        <label for="destin">Enter Destination City</label>
-                        <input type="text" name="destin" id="destin" required>
+                        <input type="text" name="destin" placeholder="Enter Destination City" id="destin" required>
                     </div> 
 
                     <div class="depdate">
-                        <label for="depdate">Departure Date</label>
-                        <input type="date" name="depdate" id="depdate" required>
+                        <input placeholder="Departure Date" type ="text" onfocus="(this.type = 'date')" name="depdate"  id="depdate" required>
                     </div> 
 
                     <div class="retdate">
-                        <label for="retdate">Return Date</label>
-                        <input type="date" name="retdate" id="retdate" required>
+                        <input placeholder="Return Date" type ="text" onfocus="(this.type = 'date')" name="retdate" id="retdate">
                     </div>
 
                     <div class="passengers">
-                        <label for="passengers">Passenger</label>
-                        <input type="number" name="passengers" id="passengers" required>
+                        <input type="number" name="passengers" placeholder="Number of Passenger" id="passengers" required>
                     </div>
 
-                    <button>Search</button>
+                    <button class="search">Search</button>
+                </div>
                 </form>
-            </div>
 
-            <div class="refineslider">
-                    <input type="range" min="1" max="10000" value="50" class="slider" id="range"> 
-            </div>
+                <!-- Price range selector -->
+                <h4>Refine flight search</h4>
+                
+                <input type="range" min="1" max="10000" value="50" class="slider" id="range"> 
+            
 
             
     </div>
 </body>
 </html>
+
