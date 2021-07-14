@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="flight.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search Engine</title>
+</head>
+<body>
+    <h1>Flight Search Engine</h1>
+    <div class="left">
+            <div class="details">
+                <form action="" method="GET" class=one-way>
+                    <div class="type">
+                        <label for="type">One way or Return</label>
+                        <input type="radio" name="type" id="oneway" value="one_way">
+                        <input type="radio" name="type" id="return" value="return">
+                   </div>
+                    
+                   <div class="origin">
+                        <label for="origin">Enter Origin City</label>
+                        <input type="text" name="origin" id="origin" required>
+                   </div> 
+
+                   <div class="destin">
+                        <label for="destin">Enter Destination City</label>
+                        <input type="text" name="destin" id="destin" required>
+                    </div> 
+
+                    <div class="depdate">
+                        <label for="depdate">Departure Date</label>
+                        <input type="date" name="depdate" id="depdate" required>
+                    </div> 
+
+                    <div class="retdate">
+                        <label for="retdate">Return Date</label>
+                        <input type="date" name="retdate" id="retdate" required>
+                    </div>
+
+                    <div class="passengers">
+                        <label for="passengers">Passenger</label>
+                        <input type="number" name="passengers" id="passengers" required>
+                    </div>
+
+                    <button>Search</button>
+                </form>
+            </div>
+
+            <div class="refineslider">
+                    <input type="range" min="1" max="10000" value="50" class="slider" id="range"> 
+            </div>
+
+            
+    </div>
+</body>
+</html>
