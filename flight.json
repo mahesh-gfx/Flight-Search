@@ -1,0 +1,128 @@
+[
+    {
+      "Origin": "Delhi",
+      "Destination": "Mumbai",
+      "A": "AI120",
+      "D1": "08:30 PM",
+      "A1": "10:45PM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Chennai",
+      "A": "AI121",
+      "D1": "09:30 PM",
+      "A1": "10:30 PM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Kolkata",
+      "A": "AI122",
+      "D1": "10:30 PM",
+      "A1": "11:30 PM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Jaipur",
+      "A": "AI123",
+      "D1": "11:30 PM",
+      "A1": "12:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Srinagar",
+      "A": "AI124",
+      "D1": "12:30 AM",
+      "A1": "01:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Mumbai",
+      "A": "AI125",
+      "D1": "01:30 AM",
+      "A1": "02:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Chennai",
+      "A": "AI126",
+      "D1": "02:30 AM",
+      "A1": "03:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Kolkata",
+      "A": "AI127",
+      "D1": "03:30 AM",
+      "A1": "04:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Jaipur",
+      "A": "AI128",
+      "D1": "04:30 AM",
+      "A1": "05:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Srinagar",
+      "A": "AI129",
+      "D1": "05:30 AM",
+      "A1": "06:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Mumbai",
+      "A": "AI130",
+      "D1": "06:30 AM",
+      "A1": "07:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Chennai",
+      "A": "AI131",
+      "D1": "07:30 AM",
+      "A1": "10:45PM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Kolkata",
+      "A": "AI132",
+      "D1": "08:30 AM",
+      "A1": "08:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Jaipur",
+      "A": "AI133",
+      "D1": "09:30 AM",
+      "A1": "09:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Srinagar",
+      "A": "AI134",
+      "D1": "10:30 AM",
+      "A1": "10:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Mumbai",
+      "A": "AI135",
+      "D1": "11:30 AM",
+      "A1": "11:30 AM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Chennai",
+      "A": "AI136",
+      "D1": "12:30 PM",
+      "A1": "12:30 PM"
+    },
+    {
+      "Origin": "Delhi",
+      "Destination": "Kolkata",
+      "A": "AI137",
+      "D1": "01:30 PM",
+      "A1": "01:30 PM"
+    }
+  ]
