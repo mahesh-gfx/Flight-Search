@@ -44,7 +44,7 @@
                     }
 
                     else
-                    {
+                    {   
                         journ.innerHTML = orig + " > " + dest;
                     }
 
@@ -88,22 +88,29 @@
                         arriv.innerHTML = "Arrival: " + data[i].ar;
                         contain.appendChild(arriv);
                         
-                        var button = document.createElement("button");
-                        button.setAttribute("")
+                        var button = document.createElement("input");
+                        button.setAttribute("type", "button");
+                        button.setAttribute("value", "Book this flight!");
+                        button.setAttribute("id", "book");
                         contain.appendChild(button);
                        
                 
                     }
 
-                        // else    
-                        //     {
-                        //         var noflight = document.createAttribute("div");
-                        //         noflight.setAttribute("id","nofl");
-                        //         noflight.innerHTML="No Flights Found!";
-                        //         mainContainer.appendChild(noflight);
-                        //         console.log("Uh oh")
-                        //     }
-                
+                    else
+                    { 
+                        noflights=1;
+                    }
+                   
+                }
+               
+                if(noflights=1)
+                {
+                    var noflight=document.createElement("div");
+                        noflight.setAttribute("id", "noflight");
+                        noflight.innerHTML="No flight found!";
+                        mainContainer.append(noflight);
+                        console.log("noflight");
                 }
             }
         return false;

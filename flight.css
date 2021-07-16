@@ -136,7 +136,7 @@ h1 span
 
 }
 
-.submit
+#book
 {
     padding: 10px 20px;
     margin: 0.8rem 0 0.1rem 0;
@@ -151,18 +151,18 @@ h1 span
 }
 
 
-.submit:hover span 
+#book:hover span 
 {
     display:none
 }
   
-.submit:hover:before 
+#book:hover:before 
   {
     content:"Let's Go!";
     transition: all 0.2s ease-in-out;
   }
   
-.submit:hover 
+#book:hover 
 {
     background-color: #51CB20;
 }
@@ -278,5 +278,11 @@ h1 span
 #orig-dest, #departure, #arrival
 {
     padding:3px 3px 3px 0px;
+}
+
+#noflight
+{
+    margin: 200px;
+    font-size: 30px;
 }
 
