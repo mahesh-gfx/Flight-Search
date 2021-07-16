@@ -17,13 +17,13 @@ body
 h1
 {   padding-left: 30px;
     color: blanchedalmond;
-    font-weight: 1000;
+    font-weight: 7000;
 }
 
 h1 span
 {
-    font-size: small;
-    font-weight: 100;
+    font-size: 14px;
+    font-weight: 300;
 }
 .details
 {
@@ -34,23 +34,36 @@ h1 span
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
 }
 
 .details input
 {
     font-family: 'Montserrat', sans-serif;
-	border: none;
 	border-radius: 4px;
 	font-size: 15px;
+    font-weight: Normal;
+    border: none;
 	margin: 2px;
 	outline: 0;
 	padding: 10px;
 	width: 100%;
 	box-sizing: border-box;
    	background-color: white;
-	color: grey;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	margin-bottom: 10px;
+}
+
+.details input:hover
+{
+    border: 1px solid blue;
+    transition: all 0.2s ease-in-out;
+}
+
+::placeholder
+{
+    font-weight: 100;
+    opacity: 1;
 }
 
 .type
@@ -59,7 +72,9 @@ h1 span
     display:flex;
     margin-bottom: 0px;
     overflow: hidden;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
 }
 
 .type input
@@ -67,7 +82,6 @@ h1 span
     position: absolute !important;
     height: 1px;
     width: 1px;
-    border: 0;
     overflow: hidden;
 }
 
@@ -95,6 +109,7 @@ h1 span
     background-color: #5E4AE3;
     color:white;
     box-shadow: none;
+    font-weight: 500;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -121,10 +136,10 @@ h1 span
 
 }
 
-.search
+.submit
 {
-    padding: 10px 16px;
-    margin: .5rem;
+    padding: 10px 20px;
+    margin: 0.8rem 0 0.1rem 0;
     line-height: 1;
     font-size: 1em;
     background-color: #5E4AE3;
@@ -136,18 +151,18 @@ h1 span
 }
 
 
-.search:hover span 
+.submit:hover span 
 {
     display:none
 }
   
-.search:hover:before 
+.submit:hover:before 
   {
     content:"Let's Go!";
     transition: all 0.2s ease-in-out;
   }
   
-.search:hover 
+.submit:hover 
 {
     background-color: #51CB20;
 }
@@ -191,34 +206,40 @@ h1 span
     cursor: pointer;
 }
 
-.journey
+#jour
 {
-    height: 3rem;
-    padding: 10em;
-    background-color: #d8def5;
+    height: auto;
+    width: auto;
+    padding: 1em;
+    background-color: #e6e6e6;
     display: flex;
     margin: 0px 0 0 0px;
-    float: right;
-    flex-direction: inherit;
-}
-
-.flight
-{
-    width: 60%;
-    height: 10rem;
-    min-width: 300px;
-    background-color: #F1F2F6;
-    border: 1px solid #EBEBEB;
-    padding: 2em;
-    display: flex;
-    margin: 100px 0 0 20px;
-    float: right;
     flex-direction: column;
 }
 
-.flight:hover
+#flight2
 {
-    border: 1px solid #5E4AE3;
+    min-width: 500px;
+    height: auto;
+    min-width: 300px;
+    background-color: #F1F2F6;
+    border: 1px solid #EBEBEB;
+    padding: 1em;
+    display: block;
+    margin: 10px 0 0 10px;
+    float: left;
+    
+}
+
+#flight1
+{
+    padding: 0px;
+    margin: 0px;
+}
+#flight:hover
+{
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0 1px 0 rgba(0,0,0.1,0.3);
 }
 
 .content
@@ -227,8 +248,35 @@ h1 span
     flex-direction: inherit;
 }
 
+#cost
+{
+    color: #5E4AE3;
+    font-weight: 500;
+    font-size: 28px;
+    font: bold;
+}
+
+#flightno
+{
+    padding: 5px 5px 5px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0 0 0px;
+}
 /* input:invalid
 {
     border: 2px solid red;
 } */
+
+.details input::placeholder
+{
+    font-weight: 300;
+    color: black;
+}
+
+
+#orig-dest, #departure, #arrival
+{
+    padding:3px 3px 3px 0px;
+}
 

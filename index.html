@@ -6,10 +6,8 @@
     <link rel="stylesheet" href="flight.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="test.js"></script>
-    
     <title>Flight Search Engine</title>
 </head>
 <body>
@@ -20,15 +18,16 @@
     <div class="content">
         <div class="left">
                 
-            <form onsubmit="validator()" method="GET" class="form-details" id="formSearch">
+            <!-- form for taking user input -->
+            <form method="POST" class="form-details" id="formSearch">
                         <div class="type">
                             
-                            <input type="radio" name="radio-one" id="radio-one" value="one" checked>
+                            <input type="radio" name="radioone" id="radio-one" value="0" checked>
                             <label for="radio-one">One Way</label>
                             
-                            <input type="radio" name="radio-two" id="radio-two" value="return">
+                            <input type="radio" name="radioone" id="radio-two" value="1">
                             <label for="radio-two">Return</label>
-                    </div>
+                        </div>
                         
                         <div class="details">
                             <div class="origin">
@@ -64,7 +63,7 @@
                                 <input type="number" min="1" name="passengers" placeholder="Passengers" id="passengers" required>
                             </div>
 
-                            <button class="search" type="search"> <span>Search</span> </button>
+                            <button class="submit" type="submit"> <span>Search</span> </button>
                         </div>
             </form>
 
@@ -80,15 +79,14 @@
         
         <!-- flight details -->
 
-        <div class="journey">
-
-        </div>
-
-        <div class="flight" id="flight">
-                            
+        <div class="flight1" id="flight1">
+            <div id="journey"></div>
+            
+                                      
         </div>
     </div>
     
+    <script src="flight.js"></script>
 </body>
 </html>
 
