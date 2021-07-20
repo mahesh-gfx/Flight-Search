@@ -12,6 +12,7 @@
                     radio=ele[i].value;
             }
         
+            
         
             fetch('flight.json')
             .then(function (response) 
@@ -113,6 +114,7 @@
                         console.log("noflight");
                 }
             }
+            
         return false;
     };
 
