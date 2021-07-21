@@ -27,9 +27,12 @@
             {
                 console.log('error: ' + err);
             });
+
+            
             
             function appendData(data) 
             {
+                var noflight=0;
                 var mainContainer=document.getElementById("flight1");
                    
                 if(orig!=dest)
@@ -55,6 +58,7 @@
                 for (var i = 0; i < data.length; i++) 
                 {   if((data[i].destination==dest)&&(data[i].origin==orig))
                     {
+                        noflights=0;
                         var conta = document.createElement("div")
                         conta.setAttribute("id","flight");
                         mainContainer.append(conta);
