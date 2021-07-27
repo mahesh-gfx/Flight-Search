@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="flight.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
@@ -11,56 +12,66 @@
     <title>Flight Search Engine</title>
 </head>
 <body>
-    <div class="header">
-        <h1>Flight <span>Search Engine</span> </h1>
+    <div class="col-12 bg-primary">
+        <h1>Flight <small class="text-muted">Search Engine</small> </h1>
     </div>
     
-    <div class="content">
+    <div class="container-fluid">
         <div class="left">
                 
             <!-- form for taking user input -->
             <form method="POST" class="form-details" id="formSearch">
-                        <div class="type">
-                            
-                            <input type="radio" name="radioone" id="radio-one" value="0" checked>
-                            <label for="radio-one">One Way</label>
-                            
-                            <input type="radio" name="radioone" id="radio-two" value="1">
-                            <label for="radio-two">Return</label>
+
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                            <input type="radio" name="radioone" id="radio-one" value="0" autocomplete="off" style="visibility: hidden;" checked>One Way</label>
+                            <label class="btn btn-secondary">
+                            <input type="radio" name="radioone" id="radio-two" value="1" autocomplete="off" style="visibility: hidden;">Return</label>
                         </div>
-                        
-                        <div class="details">
-                            <div class="origin">
-                                    <input list="city1" type="text" name="origin" placeholder="Enter Origin City" id="origin" required>
-                                    <datalist id="city1">
-                                        <option value="Bangalore">
-                                        <option value="Bhopal">
-                                        <option value="Chennai">
-                                        <option value="Delhi">
-                                        <option value="Gangtok">
-                                        <option value="Guwahati">
-                                        <option value="Hyderabad">
-                                        <option value="Kolkata">
-                                        <option value="Lucknow">
-                                        <option value="Mumbai">
-                                                                                                                 
-                                    </datalist>
+
+                        <div class="col-3">
+                            <div class="form-group-sm">
+                                   <select name="city1" id="origin" class="form-control" placeholder="Origin City" required>
+                                        <option value="nil">Origin City</option>
+                                        <option value="Bangalore">Bangalore</option>
+                                        <option value="Bhopal">Bhopal</option>
+                                        <option value="Chennai">Chennai</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Gangtok">Gangtok</option>
+                                        <option value="Guwahati">Guwahati</option>
+                                        <option value="Hyderabad">Hyderabad</option>
+                                        <option value="Kolkata">Kolkata</option>
+                                        <option value="Lucknow">Lucknow</option>
+                                        <option value="Mumbai">Mumbai</option>
+                                    </select>
                             </div> 
 
-                            <div class="destin">
-                                <input list="city1" type="text" name="destin" placeholder="Enter Destination City" id="destin" required>
-                            </div> 
+                            <div class="form-group-sm">
+                                <select name="city1" id="destin" class="form-control" placeholder="Origin City" required>
+                                     <option value="nil">Destination City</option>
+                                     <option value="Bangalore">Bangalore</option>
+                                     <option value="Bhopal">Bhopal</option>
+                                     <option value="Chennai">Chennai</option>
+                                     <option value="Delhi">Delhi</option>
+                                     <option value="Gangtok">Gangtok</option>
+                                     <option value="Guwahati">Guwahati</option>
+                                     <option value="Hyderabad">Hyderabad</option>
+                                     <option value="Kolkata">Kolkata</option>
+                                     <option value="Lucknow">Lucknow</option>
+                                     <option value="Mumbai">Mumbai</option>
+                                 </select>
+                         </div>
 
                             <div class="depdate">
-                                <input placeholder="Departure Date" type ="text" onfocus="(this.type = 'date')" name="depdate"  id="depdate" required>
+                                <input placeholder="Departure Date" type ="text" onfocus="(this.type = 'date')" class="form-control" name="depdate"  id="depdate" required>
                             </div> 
 
                             <div class="retdate">
-                                <input placeholder="Return Date" type ="text" onfocus="(this.type = 'date')" name="retdate" id="retdate">
+                                <input placeholder="Return Date" type ="text" onfocus="(this.type = 'date')" class= "form-control" name="retdate" id="retdate">
                             </div>
 
                             <div class="passengers">
-                                <input type="number" min="1" name="passengers" placeholder="Passengers" id="passengers" required>
+                                <input type="number" min="1" name="passengers" placeholder="Passengers" id="passengers" class="form-control" required>
                             </div>
 
                             <button class="submit" type="submit" id="book"> <span>Search</span> </button>
